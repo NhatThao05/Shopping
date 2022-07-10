@@ -4,7 +4,7 @@ export const Colors = {
  primary: "#2196F3",
  secondary: "#E5E5E5",
  success: "#4CAF50",
- dark: "#0e1b20",
+ dark: "#495057",
  light: "#aaa",
  muted: "#abafb3",
  border: "#DDDFE1",
@@ -27,6 +27,9 @@ const theme = createTheme({
   },
   secondary: {
    main: Colors.secondary
+  },
+  third: {
+   main: Colors.dark
   }
  },
  component: {

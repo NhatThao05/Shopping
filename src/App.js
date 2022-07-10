@@ -1,7 +1,7 @@
 import {ThemeProvider} from "@mui/system"
-import { Button } from "@mui/material";
 import { useEffect } from "react";
 import theme from "./styles/theme";
+import AppBar from "./component/appbar";
 
 function App() {
   useEffect(() => {
@@ -9,15 +9,13 @@ function App() {
   },[])
   return (
     <ThemeProvider theme={theme}>
-      {/* Appbar
-          Banner
+      {/* Banner
           Promotion
           Product
           Footer
           AppDrawer */}
-      <div>
-        <Button variant="contained">Go</Button>
-      </div>
+      <AppBar />
+      
     </ThemeProvider>
     
   );

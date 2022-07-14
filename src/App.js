@@ -4,6 +4,8 @@ import theme from "./styles/theme";
 import AppBar from "./component/appbar";
 import Banner from "./component/banner";
 import Promotion from "./component/promotion";
+import Appdrawer from "./component/drawer";
+import { UIProvider } from "./context/ui";
 
 function App() {
   useEffect(() => {
@@ -12,11 +14,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       {/* Product
-          Footer
-          AppDrawer */}
-      <AppBar />
-      <Promotion />
-      <Banner />
+          Footer */}
+      <UIProvider>
+        <AppBar />
+        <Promotion />
+        <Banner />
+        <Appdrawer />
+      </UIProvider>
+      
       
     </ThemeProvider>
     

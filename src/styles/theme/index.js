@@ -32,11 +32,18 @@ const theme = createTheme({
    main: Colors.dark
   }
  },
- component: {
+ components: {
   MuiButton: {
    defaultProps: {
     disableRipple: true,
     disableElevation: true,
+   }
+  },
+  MuiDrawer: {
+   styleOverrides: {
+    paper: {
+     width: 300,
+    }
    }
   }
  }

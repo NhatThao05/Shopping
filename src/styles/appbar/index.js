@@ -1,4 +1,4 @@
-import { Typography, List } from "@mui/material";
+import { Typography, List, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import {Box} from "@mui/system";
 import { Colors } from "../theme";
@@ -67,4 +67,11 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
      },
    },
  },
+}));
+
+export const CloseDrawerButton = styled(IconButton)(() => ({
+  position: 'absolute',
+  top: 10,
+  left: '300px',
+  zIndex: 1999,      
 }));

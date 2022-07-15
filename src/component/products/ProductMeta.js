@@ -1,8 +1,7 @@
 import { Typography} from "@mui/material";
 import { ProductMetaWrapper } from "../../styles/product";
 
-
-export default function ProductMeta({product, matches, direcotry}){
+export default function ProductMeta({product, matches}){
  return (
   <>
   <ProductMetaWrapper>
@@ -10,6 +9,5 @@ export default function ProductMeta({product, matches, direcotry}){
    <Typography variant={matches ? "caption" : 'body1'} lineHeight={2}>${product.price}</Typography>
   </ProductMetaWrapper>
   </>
-
  )
 }

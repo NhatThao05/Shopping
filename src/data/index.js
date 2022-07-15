@@ -37,7 +37,7 @@ export const products = [
  },
 ]
 
-export const directories = [
+export const nutritions = [
  {
   id: 1,
   name: "The protein",
@@ -48,21 +48,12 @@ export const directories = [
   id: 2,
   name: "Protein cake",
   image: "https://s1.thcdn.com/widgets/83-xd/51/original-Widget_Category_672x512_%2893%29-100011-034451.png",
-  description: "Maintain your training regimen as desired with delicious and convenient protein cakes that can be used at any time"
-
+  description: "Maintain your training with delicious and convenient protein cakes that can be used"
  },
  {
   id: 3,
   name: "Premium Protein",
   image: "https://s1.thcdn.com/widgets/83-xd/57/original-Widget_Category_672x512_%2895%29-100058-034457.png",
   description: "Trying to get the best proformance? USe the best products for your body"
-
- },
- {
-  id: 4,
-  name: "Pre workout",
-  image: "https://s1.thcdn.com/widgets/83-xd/17/range-437x437-pro-range-113007-062017.jpg",
-  description: "High quality cafein and creatine pumps products suitable for any Bulking and Cutting process"
-
  },
 ]

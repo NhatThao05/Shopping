@@ -2,6 +2,7 @@ import { useTheme } from "@emotion/react"
 import { useMediaQuery, Grid, Container, Box, Typography, Button } from "@mui/material";
 import {products} from "../../data"
 import SingleProduct from "./SingleProduct";
+import SingleProductDesktop from "./SingleProductDesktop";
 
 
 export default function Products() {
@@ -17,7 +18,9 @@ export default function Products() {
     display="flex" 
     flexDirection={"column"} 
     alignItems="center">
-   <SingleProduct product={product} matches={matches}/>
+     { matches ? 
+        <SingleProduct product={product} matches={matches}/> : 
+        <SingleProductDesktop product={product} matches={matches}/> }
   </Grid>
  ))
  return (

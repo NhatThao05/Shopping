@@ -6,6 +6,7 @@ import Banner from "./component/banner";
 import Promotion from "./component/promotion";
 import Appdrawer from "./component/drawer";
 import { UIProvider } from "./context/ui";
+import Products from "./component/products";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <AppBar />
         <Promotion />
         <Banner />
+        <Products />
         <Appdrawer />
       </UIProvider>
       

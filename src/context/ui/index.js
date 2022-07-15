@@ -4,7 +4,7 @@ export const UIContext = createContext({});
 export const useUIContext = () => useContext(UIContext);
 
 export const UIProvider = ({ children }) => {
-    const [openDrawer, setOpenDrawer] = useState(true);
+    const [openDrawer, setOpenDrawer] = useState(false);
 
     const value = {
         openDrawer,

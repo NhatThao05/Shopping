@@ -9,14 +9,13 @@ import { UIProvider } from "./context/ui";
 import Products from "./component/products";
 import Nutritions from "./component/nutritions";
 import Marketing from "./component/marketing";
-
+import Footer from "./component/footer"
 function App() {
   useEffect(() => {
     document.title = "Shopping"
   },[])
   return (
     <ThemeProvider theme={theme}>
-      {/* Footer */}
       <UIProvider>
         <AppBar />
         <Promotion />
@@ -24,6 +23,7 @@ function App() {
         <Products />
         <Nutritions /> 
         <Marketing />
+        <Footer />
         <Appdrawer />
       </UIProvider>
       

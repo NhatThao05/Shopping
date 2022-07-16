@@ -53,7 +53,7 @@ export default function Marketing() {
   return (
     <MarketingContainer>
 
-    <Box sx={{ maxWidth: 1100, flexGrow: 1, marginTop: 10, justifyContent: "center",
+    <Box sx={{ maxWidth: 1100, flexGrow: 1, justifyContent: "center",
           alignItems: 'center', }}>
       <Paper
         square

@@ -8,6 +8,7 @@ import Appdrawer from "./component/drawer";
 import { UIProvider } from "./context/ui";
 import Products from "./component/products";
 import Nutritions from "./component/nutritions";
+import Marketing from "./component/marketing";
 
 function App() {
   useEffect(() => {
@@ -15,14 +16,14 @@ function App() {
   },[])
   return (
     <ThemeProvider theme={theme}>
-      {/* Product
-          Footer */}
+      {/* Footer */}
       <UIProvider>
         <AppBar />
         <Promotion />
         <Banner />
         <Products />
         <Nutritions /> 
+        <Marketing />
         <Appdrawer />
       </UIProvider>
       

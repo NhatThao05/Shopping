@@ -5,10 +5,10 @@ export const BannerImageCover = styled('img')(({src, theme}) => ({
  // marginTop: 10,
  width: '100%',
  [theme.breakpoints.down('md')]: {
-  width: '100%'
+  width: '80%'
  },
  [theme.breakpoints.down('sm')]: {
   width: '100%',
-  height: '100%',
+  height: '80%',
  },
 }))
